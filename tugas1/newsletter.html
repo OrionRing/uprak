@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="/tugas1/style4.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <ul>
+      <li><img src="/tugas1/img/icon1.png" alt="Logo" /></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="market.html">Market</a></li>
+      <li><a class="active" href="newsletter.html">Newsletter</a></li>
+      <li><a href="credit.html">Credits</a></li>
+    </ul>
+    <!-- FORM!!! (JAM 11) -->
+    <div class="form-container">
+      <h2>Sign Up for Stock Updates!</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Number" required />
+        <input type="date" placeholder="Birthdate" required />
+        <label
+          for="file-upload"
+          style="margin-top: 10px; display: block; text-align: left"
+          >Upload your ID:</label
+        >
+        <input type="file" id="file-upload" accept="image/*" required />
+        <label
+          for="updates"
+          style="margin-top: 10px; display: block; text-align: left"
+          >Receive Offers:</label
+        >
+        <select id="updates" required>
+          <option value="">Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        <label
+          for="notes"
+          style="margin-top: 10px; display: block; text-align: left"
+          >Extra Notes:</label
+        >
+        <textarea
+          id="notes"
+          placeholder="Extra info you want to give to our team..."
+        ></textarea>
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+
+    <div class="footer">Made by: Rafael Malaka</div>
+  </body>
+</html>

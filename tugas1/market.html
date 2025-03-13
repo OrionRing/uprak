@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Aircraft</title>
+    <link rel="stylesheet" href="/tugas1/style2.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <ul>
+      <li><img src="/tugas1/img/icon1.png" alt="Logo" /></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a class="active" href="market.html">Market</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="credit.html">Credits</a></li>
+    </ul>
+    <div class="table-container">
+      <h2>List of aircraft for sale</h2>
+      <div class="card">
+        <img
+          src="/tugas1/img/cessna172img.jpg"
+          alt="cessna172"
+          style="
+            width: 250px;
+            height: 150px;
+            margin-top: 10px;
+            border-radius: 5px;
+          "
+        />
+        <h1>Cessna 172 Skyhawk</h1>
+        <p class="price">$300,000</p>
+        <p>General Aviation aircraft, popular among student pilots</p>
+        <p>
+          <button
+            onclick="addToCart('Cessna 172 Skyhawk', 300)"
+            class="button-1"
+          >
+            Add to Cart
+          </button>
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="/tugas1/img/navajo.png"
+          alt="navajo"
+          style="
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+            border-radius: 5px;
+          "
+        />
+        <h1>Piper PA-31 Navajo</h1>
+        <p class="price">$600,000</p>
+        <p>
+          Dual engine, double the thrust, great for transporting multiple
+          people!
+        </p>
+        <p>
+          <button
+            onclick="addToCart('Piper PA-31 Navajo', 600)"
+            class="button-1"
+          >
+            Add to Cart
+          </button>
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="/tugas1/img/visionjet.png"
+          alt="vision"
+          style="
+            width: 250px;
+            height: 150px;
+            margin-top: 10px;
+            border-radius: 5px;
+          "
+        />
+        <h1>Cirrus Vision Jet</h1>
+        <p class="price">$1,000,000</p>
+        <p>Cheapest jet model yet, perfect for business.</p>
+        <p>
+          <button
+            onclick="addToCart('Cirrus Vision Jet', 1000)"
+            class="button-1"
+          >
+            Add to Cart
+          </button>
+        </p>
+      </div>
+
+      <div class="cart">
+        <h2>
+          Shopping Cart
+          <h6>List prices are in thousands*</h6>
+        </h2>
+        <ul id="cart-items"></ul>
+        <p
+          style="
+            background-color: skyblue;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 2px;
+            width: auto;
+            margin-left: 300px;
+          "
+        >
+          Total: $<span id="cart-total">0</span>
+        </p>
+      </div>
+      <button class="open-button" onclick="openForm()">Pay here!</button>
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Payment form</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="Name" required />
+          <label for="card"><b>Banking Info</b></label>
+          <input
+            type="text"
+            placeholder="Enter Banking Info"
+            name="card"
+            required
+          />
+          <button type="submit" class="btn">Pay</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+        <script src="marketscript.js"></script>
+      </div>
+    </div>
+    <div class="footer">Made by: Rafael Malaka</div>
+  </body>
+</html>

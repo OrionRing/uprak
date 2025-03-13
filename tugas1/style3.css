@@ -1,0 +1,104 @@
+
+body {
+    background-image: url(/tugas1/img/background3.png);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+img{
+    height: 60px;
+    width: 90px;
+}
+/* NAVBAR */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 23px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4c93af;
+/*TITLE*/
+  }
+  .title {
+    text-align: center;
+  }
+  .text1 {
+    font-style: italic;
+  }
+  .text2 {
+    font-size: large;
+  }
+  .credits-container {
+    background: azure;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    margin-top: 10px;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none; /* Disable resizing */
+    height: 150px; /* Set a fixed height */
+    transition: border-color 0.3s;
+    background: #f9f9f9; /* Light background for textarea */
+    color: #333; /* Text color */
+    font-family: inherit; /* Match font with body */
+    
+}
+
+textarea:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(34, 33, 33); 
+  opacity: 0.8  ; 
+  color: white;
+  text-align: left;
+}

@@ -1,0 +1,131 @@
+
+body {
+    background-image: url(/tugas1/img/background4.png);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 60px;
+    width: 90px;
+}
+/* NAVBAR */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    
+    display: block;
+    color: white;
+    opacity: 0.6;
+    text-align: center;
+    padding: 23px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4c93af;
+/*TITLE*/
+  }
+  .title {
+    text-align: center;
+  }
+  .text1 {
+    font-style: italic;
+  }
+  .text2 {
+    font-size: large;
+  }
+  .form-container {
+    background: azure;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(to right, #00aaff, #b2e0f0); /* Gradient for button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(to right, #b2e0f0, #00aaff); /* Reverse gradient on hover */
+}
+
+textarea {
+    resize: none; /* Disable resizing */
+    height: 60px; /* Set a fixed height */
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(34, 33, 33); 
+  opacity: 0.8  ; 
+  color: white;
+  text-align: left;
+}
